@@ -1,0 +1,6 @@
+framework module Pods_AppIOTUITests {
+  umbrella header "Pods-AppIOTUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
