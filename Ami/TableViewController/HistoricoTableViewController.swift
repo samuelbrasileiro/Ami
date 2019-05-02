@@ -109,7 +109,7 @@ class HistoricoTableViewController: UITableViewController {
             
             
             
-            if let pageVC = segue.destination as? SessionPageViewController {
+            if let _ = segue.destination as? SessionPageViewController {
                 
 //                vc.conversa = exportConversa
                 
