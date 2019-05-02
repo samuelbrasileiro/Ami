@@ -22,14 +22,11 @@ enum PalavrasChave : String{
 }
 
 class Dados{
-    
-    //var toyID: String
-    //var date: Date
+    var data: String
     var humor: [Humor: Double]//doc//features//emotion//document//emotion
-    var keys: [PalavrasChave: Int]
+    var keys: [PalavrasChave: Int]//doc//payload
     init(){
-        //self.toyID = "Sem dados"
-        
+        self.data = "03/05/2019"
         self.humor = [
             .joy : 0,
             .sadness : 0,
@@ -50,7 +47,8 @@ class Dados{
         ]
     }
     
-    init(humores: [Humor:Double], chaves: [PalavrasChave:Int]){
+    init(data: String, humores: [Humor:Double], chaves: [PalavrasChave:Int]){
+        self.data = data
         self.humor = [
             .joy : humores[.joy]!,
             .sadness : humores[.sadness]!,

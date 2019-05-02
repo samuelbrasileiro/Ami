@@ -14,7 +14,7 @@ class EmotionsViewController: UIViewController {
         if let mySessao = sessao{
            setupPieChart(sessao: mySessao)
         }
-        graph.animate(yAxisDuration: 3)
+        graph.animate(yAxisDuration: 2)
     }
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         inMotion = true

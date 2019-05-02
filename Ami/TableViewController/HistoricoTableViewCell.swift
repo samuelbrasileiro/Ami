@@ -13,7 +13,9 @@ class HistoricoTableViewCell: UITableViewCell {
    
     @IBOutlet var data: UILabel!
 
-
+    @IBOutlet weak var sessaoID: UILabel!
+    @IBOutlet weak var amiImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -21,7 +21,7 @@ class WordsViewController: UIViewController {
         graph.chartDescription?.enabled = false
         graph.drawBarShadowEnabled = true
         graph.drawValueAboveBarEnabled = true
-        
+        graph.backgroundColor = UIColor.lightGray
         graph.isUserInteractionEnabled = false
         graph.backgroundColor = NSUIColor.white
         
@@ -82,6 +82,8 @@ class WordsViewController: UIViewController {
         entries.append(BarChartDataEntry(x: 2, y: Double(sessao.keys[.Desafios]!)))
         entries.append(BarChartDataEntry(x: 3, y: Double(sessao.keys[.Detalhes_dia_negativo]!)))
         entries.append(BarChartDataEntry(x: 4, y: Double(sessao.keys[.Detalhes_dia_positivo]!)))
+        entries.append(BarChartDataEntry(x: 2, y: Double(sessao.keys[.palavrao]!)))
+        entries.append(BarChartDataEntry(x: 3, y: Double(sessao.keys[.Saude_negativa]!)))
         
         
         let dataSet = BarChartDataSet(entries: entries, label: "Palavras-Chave")
@@ -90,10 +92,11 @@ class WordsViewController: UIViewController {
         let c3 = NSUIColor(red: 251/255, green: 209/255, blue: 162/255, alpha: 1)
         let c4 = NSUIColor(red: 236/255, green: 228/255, blue: 183/255, alpha: 1)
         let c5 = NSUIColor(red: 252/255, green: 159/255, blue: 91/255, alpha: 1)
-        dataSet.colors = [c1,c2,c3,c4,c5]
+        let c6 = NSUIColor(hex: 0xACC6AA)
+        let c7 = NSUIColor(hex: 0x71A0A5)
+        dataSet.colors = [c1,c2,c3,c4,c5,c6,c7]
         dataSet.drawValuesEnabled = false
         
-        dataSet.stackLabels = ["Bem", "Bullying", "Desafios", "dn", "dp"]
     
         graph.data = BarChartData(dataSet: dataSet)
         
