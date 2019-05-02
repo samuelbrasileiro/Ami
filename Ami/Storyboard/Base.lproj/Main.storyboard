@@ -65,6 +65,13 @@
                                     <segue destination="Jjt-kR-226" kind="show" id="E4F-91-sCR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arraste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGX-1z-SkD">
+                                <rect key="frame" x="49" y="602" width="277" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -81,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rol-A2-Wbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3222" y="-264"/>
+            <point key="canvasLocation" x="3221.5999999999999" y="-264.01799100449779"/>
         </scene>
         <!--Words View Controller-->
         <scene sceneID="OnV-jf-85k">
@@ -160,7 +167,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzU-NP-5I4">
-                                <rect key="frame" x="156" y="208" width="62" height="45"/>
+                                <rect key="frame" x="156.5" y="208" width="62" height="45"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -299,7 +306,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="data" destination="Kke-o7-hEk" id="38b-Nt-BHb"/>
-                                    <segue destination="ImC-oe-Eq1" kind="show" identifier="conversasDetalhes" id="h3h-uZ-JD1"/>
+                                    <segue destination="ImC-oe-Eq1" kind="show" identifier="conversaDetalhes" id="h3h-uZ-JD1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -457,7 +464,7 @@
         <!--Item-->
         <scene sceneID="kwW-8z-hpX">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ImC-oe-Eq1" customClass="SessionPageViewController" customModule="Ami" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ImC-oe-Eq1" customClass="HistoricoPageViewController" customModule="Ami" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7jN-MT-Gka"/>
                     <navigationItem key="navigationItem" id="E2n-YL-S8G">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="JOa-K0-oFB"/>

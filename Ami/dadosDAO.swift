@@ -49,6 +49,28 @@ class Dados{
             .other : 0
         ]
     }
+    
+    init(humores: [Humor:Double], chaves: [PalavrasChave:Int]){
+        self.humor = [
+            .joy : humores[.joy]!,
+            .sadness : humores[.sadness]!,
+            .fear : humores[.fear]!,
+            .anger : humores[.anger]!,
+            .disgust : humores[.disgust]!,
+            .other : 0
+        ]
+        self.keys = [
+            .Bem : chaves[.Bem]!,
+            .Bullying : chaves[.Bullying]!,
+            .Desafios : chaves[.Desafios]!,
+            .Detalhes_dia_negativo : chaves[.Detalhes_dia_negativo]!,
+            .Detalhes_dia_positivo : chaves[.Detalhes_dia_positivo]!,
+            .palavrao : chaves[.palavrao]!,
+            .Saude_negativa : chaves[.Saude_negativa]!,
+            .other : 0
+        ]
+        
+    }
     func addEmotions(json: [String: AnyObject]){
         print("aaa")
         if let jsonFeatures = json["features"] as? [String:AnyObject]{

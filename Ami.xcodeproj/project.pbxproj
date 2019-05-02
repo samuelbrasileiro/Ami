@@ -17,6 +17,7 @@
 		7EB5D9FB227A4BD20075DCED /* HistoricoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5D9F9227A4BD20075DCED /* HistoricoTableViewCell.swift */; };
 		7EB5D9FC227A4BD20075DCED /* HistoricoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5D9FA227A4BD20075DCED /* HistoricoTableViewController.swift */; };
 		7EB5DA02227B2D940075DCED /* AmiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5DA00227B2D930075DCED /* AmiTests.swift */; };
+		7EB5E2BF227B609A000DD7EE /* HistoricoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5E2BE227B609A000DD7EE /* HistoricoPageViewController.swift */; };
 		89B6C1C34791505398B4C443 /* Pods_AppIOT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBBEED20E31FB5BF08D5FD3 /* Pods_AppIOT.framework */; };
 		89FA6F641F196259006B557F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA6F631F196259006B557F /* AppDelegate.swift */; };
 		89FA6F661F196259006B557F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA6F651F196259006B557F /* ViewController.swift */; };
@@ -63,6 +64,7 @@
 		7EB5D9FA227A4BD20075DCED /* HistoricoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewController.swift; sourceTree = "<group>"; };
 		7EB5DA00227B2D930075DCED /* AmiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmiTests.swift; sourceTree = "<group>"; };
 		7EB5DA01227B2D930075DCED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB5E2BE227B609A000DD7EE /* HistoricoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoPageViewController.swift; sourceTree = "<group>"; };
 		89FA6F601F196259006B557F /* Ami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FA6F631F196259006B557F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89FA6F651F196259006B557F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				7EB5D9F6227A354E0075DCED /* StartPageViewController.swift */,
 				7E4E1E372279CFEC0028864B /* SessionPageViewController.swift */,
+				7EB5E2BE227B609A000DD7EE /* HistoricoPageViewController.swift */,
 			);
 			path = PageViewControllers;
 			sourceTree = "<group>";
@@ -171,7 +174,6 @@
 				7EB5D9F42279F3DA0075DCED /* NSUIColor+Hex.swift */,
 				89FA6F631F196259006B557F /* AppDelegate.swift */,
 				89FA6F6A1F196259006B557F /* Assets.xcassets */,
-				89FA6F6C1F196259006B557F /* LaunchScreen.storyboard */,
 			);
 			path = Extra;
 			sourceTree = "<group>";
@@ -183,6 +185,15 @@
 				7EB5DA01227B2D930075DCED /* Info.plist */,
 			);
 			path = AmiTests;
+			sourceTree = "<group>";
+		};
+		7EB5DA04227B5D290075DCED /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				89FA6F671F196259006B557F /* Main.storyboard */,
+				89FA6F6C1F196259006B557F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		89FA6F571F196259006B557F = {
@@ -210,7 +221,7 @@
 		89FA6F621F196259006B557F /* Ami */ = {
 			isa = PBXGroup;
 			children = (
-				89FA6F671F196259006B557F /* Main.storyboard */,
+				7EB5DA04227B5D290075DCED /* Storyboard */,
 				7EB5D9FD227A4BDE0075DCED /* TableViewController */,
 				7EB5D9F8227A35550075DCED /* PageViewControllers */,
 				7E4E1E3C2279D0610028864B /* ViewControllers */,
@@ -470,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB5D9F7227A354E0075DCED /* StartPageViewController.swift in Sources */,
+				7EB5E2BF227B609A000DD7EE /* HistoricoPageViewController.swift in Sources */,
 				7E4E1E382279CFEC0028864B /* SessionPageViewController.swift in Sources */,
 				7EB5D9FB227A4BD20075DCED /* HistoricoTableViewCell.swift in Sources */,
 				89FA6F661F196259006B557F /* ViewController.swift in Sources */,
