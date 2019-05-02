@@ -167,11 +167,9 @@ class HistoricoTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("haha1")
+
         if segue.identifier == "conversaDetalhes"{
             
-            
-            print("haha")
             if let _ = segue.destination as? HistoricoPageViewController {
                 
 //                vc.conversa = exportConversa

@@ -18,7 +18,9 @@ class StartPageViewController: UIPageViewController, UIPageViewControllerDelegat
     lazy var orderedViewController: [UIViewController] =
     [ self.newVC(viewController: "startVC1"),
     self.newVC(viewController: "startVC2"),
-    self.newVC(viewController: "startVC3")]
+    self.newVC(viewController: "startVC3"),
+    self.newVC(viewController: "startVC4"),
+    self.newVC(viewController: "startVC5")]
     
     var pageControl = UIPageControl()
     
