@@ -753,6 +753,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3645DA27F675758A9F7B680 /* Pods-AppIOT.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P63952MS7L;
 				INFOPLIST_FILE = Ami/Info.plist;
@@ -760,6 +761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuel.Ami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
 		};
@@ -767,6 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BB893427633D041D109E083 /* Pods-AppIOT.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P63952MS7L;
 				INFOPLIST_FILE = Ami/Info.plist;
@@ -774,6 +777,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuel.Ami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
 		};

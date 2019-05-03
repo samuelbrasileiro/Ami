@@ -12,6 +12,7 @@ class loginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         usuario.delegate = self
         senha.delegate = self
+        senha.isSecureTextEntry = true
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
