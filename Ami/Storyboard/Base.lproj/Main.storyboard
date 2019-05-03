@@ -765,7 +765,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O AMI é programado para ser um amigo, interagindo com a criança de forma amigável. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrx-4u-M4q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O Ami é programado para ser um amigo, interagindo com a criança de forma amigável. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrx-4u-M4q">
                                 <rect key="frame" x="42" y="435.5" width="291" height="59.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="291" id="9fO-hi-PeD"/>
@@ -832,7 +832,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O AMI nunca salva as conversas e só os responsáveis tem acesso às análises" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRn-UO-rpl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O Ami nunca salva as conversas e só os responsáveis tem acesso às análises" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRn-UO-rpl">
                                 <rect key="frame" x="42" y="451" width="291" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="291" id="5x2-yd-wem"/>
@@ -921,7 +921,7 @@
                                     <constraint firstAttribute="height" constant="102" id="SvM-1O-NeU"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O AMI analisa as emoções na voz e palavras-chaves na fala." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRE-7k-hmX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ele analisa as emoções na voz e palavras-chaves na fala." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRE-7k-hmX">
                                 <rect key="frame" x="33" y="281" width="299" height="89"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="R2v-GG-mfz"/>
@@ -931,7 +931,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Após a conversa, o AMI tenta entender mais sobre a criança" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6z-YL-FZq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Após a conversa, Ami tenta entender mais sobre a criança" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6z-YL-FZq">
                                 <rect key="frame" x="22" y="109" width="331" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="iU7-25-C5c"/>
