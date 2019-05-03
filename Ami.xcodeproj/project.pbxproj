@@ -171,8 +171,8 @@
 		7EB5D9FE227A50E50075DCED /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				7EB5D9F42279F3DA0075DCED /* NSUIColor+Hex.swift */,
 				89FA6F631F196259006B557F /* AppDelegate.swift */,
+				7EB5D9F42279F3DA0075DCED /* NSUIColor+Hex.swift */,
 				89FA6F6A1F196259006B557F /* Assets.xcassets */,
 			);
 			path = Extra;
@@ -225,8 +225,8 @@
 				7EB5D9FD227A4BDE0075DCED /* TableViewController */,
 				7EB5D9F8227A35550075DCED /* PageViewControllers */,
 				7E4E1E3C2279D0610028864B /* ViewControllers */,
-				89FA6F751F197CD0006B557F /* dadosDAO.swift */,
 				7EB5D9FE227A50E50075DCED /* Extra */,
+				89FA6F751F197CD0006B557F /* dadosDAO.swift */,
 				89FA6F6F1F196259006B557F /* Info.plist */,
 			);
 			path = Ami;
