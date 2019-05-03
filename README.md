@@ -1,5 +1,6 @@
 # Ami
-![](Ami/Extra/Assets.xcassets/amiLogoBlackAlpha.imageset/output-onlinepngtools.png)
+<img src="Ami/Extra/Assets.xcassets/amiLogoBlackAlpha.imageset/output-onlinepngtools.png" width="200" height="200">
+
 Ami is a TJ Bot robot that, with the implemetation of some IBM's API, develop conversations with a child.
 Then, with a tenuous vocabulary, it creates a _bond_ with the child.
 ####
