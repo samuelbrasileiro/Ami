@@ -21,46 +21,22 @@ class WordsViewController: UIViewController {
         graph.chartDescription?.enabled = false
         graph.drawBarShadowEnabled = true
         graph.drawValueAboveBarEnabled = true
-        graph.backgroundColor = UIColor.lightGray
+        graph.backgroundColor = NSUIColor(red: 0, green: 0, blue: 0, alpha: 0)
         graph.isUserInteractionEnabled = false
-        graph.backgroundColor = NSUIColor.white
-        
-        //graph.setXAxisMinWidth(XAxis.AxisDependency.left, width: 0)
+        graph.backgroundColor = NSUIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        graph.xAxis.labelPosition = .bottom
+        graph.xAxis.drawGridLinesEnabled = false
         graph.isExclusiveTouch = true
         
         graph.legend.enabled = true
+        graph.xAxis.granularityEnabled = true
+        graph.xAxis.granularity = 1.0 //default granularity is 1.0, but it is better to be explicit
+        graph.xAxis.decimals = 0
         
-        // x-axis limit line
-        
-        let llXAxis = ChartLimitLine(limit: 10.0, label: "Index 10")
-        llXAxis.lineWidth = 4
-        llXAxis.lineDashLengths = [(10.0), (10.0), (0.0)]
-        llXAxis.labelPosition = ChartLimitLine.LabelPosition.bottomRight
-        llXAxis.valueFont = UIFont.systemFont(ofSize: 10.0)
-        
-         //[_chartView.xAxis addLimitLine:llXAxis];
          
-        self.graph.xAxis.gridLineDashLengths = [10.0, 10.0]
-        self.graph.xAxis.gridLineDashPhase = 0.0
-         
-         
-        let ll1 = ChartLimitLine(limit: 11.0, label: "Upper Limit")
-        ll1.lineWidth = 4.0
-        ll1.lineDashLengths = [5.0, 5.0]
-        ll1.labelPosition = ChartLimitLine.LabelPosition.topRight //ChartLimitLabelPositionRightTop
-        ll1.valueFont = UIFont.systemFont(ofSize: 10.0)
-         
-        let ll2 = ChartLimitLine(limit: -1.0, label: "Lower Limit")
-        ll2.lineWidth = 5.0
-        ll2.lineDashLengths = [5.0, 5.0]
-        ll2.labelPosition = ChartLimitLine.LabelPosition.bottomRight//ChartLimitLabelPositionRightBottom
-        ll2.valueFont = UIFont.systemFont(ofSize: 10.0)
-         
+
         let leftAxis: YAxis? =  self.graph.leftAxis
         leftAxis?.removeAllLimitLines()
-         
-        leftAxis?.addLimitLine(ll1)
-        leftAxis?.addLimitLine(ll2)
 
         leftAxis?.axisMaximum = 10.0
         leftAxis?.axisMinimum = 0.0
@@ -71,9 +47,7 @@ class WordsViewController: UIViewController {
          
         self.graph.rightAxis.enabled = false
         graph.viewPortHandler.setMaximumScaleX(5.0)
-         //[_chartView.viewPortHandler setMaximumScaleY: 2.f];
-         //[_chartView.viewPortHandler setMaximumScaleX: 2.f];
- 
+        
         
         
         var entries: [BarChartDataEntry] = Array()
@@ -97,12 +71,11 @@ class WordsViewController: UIViewController {
         dataSet.colors = [c1,c2,c3,c4,c5,c6,c7]
         dataSet.drawValuesEnabled = false
         
-    
+        
         graph.data = BarChartData(dataSet: dataSet)
         
     }
     
-
     /*
     // MARK: - Navigation
 

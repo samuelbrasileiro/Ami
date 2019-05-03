@@ -12,7 +12,6 @@ class HistoricoTableViewCell: UITableViewCell {
 
    
     @IBOutlet var data: UILabel!
-
     @IBOutlet weak var sessaoID: UILabel!
     @IBOutlet weak var amiImage: UIImageView!
     
