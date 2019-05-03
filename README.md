@@ -1,1 +1,10 @@
 # Ami
+![](Ami/Extra/Assets.xcassets/amiLogoBlackAlpha.imageset/output-onlinepngtools.png)
+Ami is a TJ Bot robot that, with the implemetation of some IBM's API, develop conversations with a child.
+Then, with a tenuous vocabulary, it creates a _bond_ with the child.
+####
+Our iOS application retrieves data from the conversations, which are stored in a database, and shows the analysis of the perceived emotions and key-words the child said.
+
+## Observation:
+We are using CocoaPods to gather the [Charts](https://github.com/danielgindi/Charts) module
+
