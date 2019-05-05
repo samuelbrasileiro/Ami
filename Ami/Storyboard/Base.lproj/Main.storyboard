@@ -496,6 +496,7 @@
                                                     <color key="titleShadowColor" red="0.21960784310000001" green="0.68235294120000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="button:" destination="kve-hp-zx8" eventType="touchUpInside" id="6cD-Ub-xWB"/>
                                                     <segue destination="V7R-mJ-y0c" kind="show" id="gqv-gw-Tze"/>
                                                 </connections>
                                             </button>

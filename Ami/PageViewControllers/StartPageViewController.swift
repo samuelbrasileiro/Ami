@@ -35,12 +35,7 @@ class StartPageViewController: UIPageViewController, UIPageViewControllerDelegat
         configurePageControl()
         
         
-        dadosDAO.getEmotions (callback: { (analise) in
-            sessaoGlobal.humor = analise.humor
-        })
-        dadosDAO.getWords (callback: { (analise) in
-            sessaoGlobal.keys = analise.keys
-        })
+        
     }
     
     

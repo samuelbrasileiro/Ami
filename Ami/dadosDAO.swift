@@ -116,6 +116,9 @@ class dadosDAO {
         
         let urlRequest = URLRequest(url: url)
         
+        let group = DispatchGroup()
+        group.enter()
+        
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             
             if error != nil {
@@ -126,7 +129,8 @@ class dadosDAO {
             let responseString = String(data: data!, encoding: String.Encoding.utf8)
             print("responseString = \(String(describing: responseString))")
             
-            DispatchQueue.main.async() {
+        
+            DispatchQueue.global(qos: .default).async {
                 do {
                     if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [[String: AnyObject]] {
                         
@@ -144,11 +148,13 @@ class dadosDAO {
                 } catch let error as NSError {
                     print("Error = \(error.localizedDescription)")
                 }
+                group.leave()
             }
             
             
         })
         task.resume()
+        group.wait()
     }
     static func getWords (callback: @escaping ((Dados) -> Void)){
         let endpoint: String = "https://nodered-ami.mybluemix.net/getWords"
@@ -158,7 +164,10 @@ class dadosDAO {
             return
         }
         let urlRequest = URLRequest(url: url)
-    
+        
+        let group = DispatchGroup()
+        group.enter()
+        
         let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             
             if error != nil {
@@ -169,7 +178,7 @@ class dadosDAO {
             let responseString = String(data: data!, encoding: String.Encoding.utf8)
             print("responseString = \(String(describing: responseString))")
             
-            DispatchQueue.main.async() {
+            DispatchQueue.global(qos: .default).async() {
                 do {
                     if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [[String: AnyObject]] {
                         
@@ -186,11 +195,13 @@ class dadosDAO {
                 } catch let error as NSError {
                     print("Error = \(error.localizedDescription)")
                 }
+                group.leave()
             }
             
             
         })
         task.resume()
+        group.wait()
     }
     
     
