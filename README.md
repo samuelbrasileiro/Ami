@@ -68,3 +68,6 @@ If you want to add the Charts Module, in your Swift file add
     <img src="Ami Images/graphWords.PNG" width="200" height="356">
   </li>
 </ul>  
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
