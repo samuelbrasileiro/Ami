@@ -57,14 +57,14 @@ If you want to add the Charts Module, in your Swift file add
 
 ## Images
 
-<ul li display=inline>
-  <li >
-    <img src="Ami/Ami_Images/loginAmi" width="200" height="356">
+<ul>
+  <li>
+    <img src="Ami Images/loginAmi.PNG" width="200" height="356">
   </li>
   <li>
-    <img src="Ami/Ami_Images/graphEmotions" width="200" height="356">
+    <img src="Ami Images/graphEmotions.PNG" width="200" height="356">
   </li>
   <li>
-    <img src="Ami/Ami_Images/graphWords" width="200" height="356">
+    <img src="Ami Images/graphWords.PNG" width="200" height="356">
   </li>
 </ul>  
